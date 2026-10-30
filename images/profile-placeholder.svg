@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 190" role="img" aria-labelledby="title description">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="description">A simple illustrated person against a soft teal circle.</desc>
+  <circle cx="110" cy="95" r="82" fill="#d7f0e9"/>
+  <path d="M44 174c8-36 32-54 66-54s58 18 66 54" fill="#137c78"/>
+  <path d="M76 78c0-23 14-39 34-39s34 16 34 39v9c0 25-15 42-34 42S76 112 76 87z" fill="#f3c9a7"/>
+  <path d="M74 81c-4-31 13-52 39-52 24 0 39 17 36 49-9-2-19-9-25-20-10 12-28 20-50 23z" fill="#183e5a"/>
+  <path d="M91 91h3m32 0h3" stroke="#172b3a" stroke-linecap="round" stroke-width="4"/>
+  <path d="M99 107c6 5 16 5 22 0" fill="none" stroke="#a8524d" stroke-linecap="round" stroke-width="3"/>
+</svg>

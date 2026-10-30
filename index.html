@@ -1,9 +1,84 @@
-<html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple paragraph.</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The course home page of Dehnizen007, a software development student exploring web design and programming.">
+    <meta name="author" content="Dehnizen007">
+    <meta name="theme-color" content="#102a43">
+    <title>Home | Dehnizen007</title>
+    <link rel="icon" href="images/site-logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/page.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Dehnizen007 home">
+            <img src="images/site-logo.svg" alt="Dehnizen007 logo" width="44" height="44">
+            <span>Dehnizen007</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="final/">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h1>Home</h1>
+
+        <div class="intro-grid">
+            <section class="panel about-panel" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
+                <div class="panel-content">
+                    <p>Hello! I’m Dehnizen007. I’m studying software development and building my skills in web design and programming. This page is my home base for the WDD 231 course projects.</p>
+                    <p>I enjoy learning how thoughtful design and clean code can make the web more useful and welcoming.</p>
+                </div>
+            </section>
+
+            <section class="panel portrait-panel" aria-labelledby="portrait-heading">
+                <h2 id="portrait-heading">Student Photo</h2>
+                <figure class="portrait">
+                    <img src="images/passport dennison.jpg" alt="Illustrated profile placeholder; replace with a personal photo">
+                    <figcaption>Dehnizen007</figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <section class="panel certificate-panel" aria-labelledby="certificate-heading">
+            <h2 id="certificate-heading">Web and Computer Programming Certificate</h2>
+            <div class="course-filters" role="group" aria-label="Filter courses">
+                <button class="filter-button is-active" type="button" data-filter="ALL" aria-pressed="true">All Courses</button>
+                <button class="filter-button" type="button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+                <button class="filter-button" type="button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
+            </div>
+            <p class="credit-summary" aria-live="polite">Credits shown: <strong id="credit-total">0</strong></p>
+            <div class="course-list" id="course-list" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="social-links" aria-label="Social media">
+            <a href="https://github.com/Dehnizen007/wdd231" aria-label="GitHub repository for wdd231" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.29-1.24-1.63-1.24-1.63-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.93.1-.72.39-1.21.71-1.49-2.47-.28-5.06-1.24-5.06-5.51 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.28-2.6 5.22-5.08 5.5.4.35.76 1.02.76 2.06v3.07c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn profile; replace this URL with your own" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.85 0 1.55-.68 1.55-1.52V3.52c0-.84-.7-1.52-1.55-1.52ZM7.93 18.9H4.97V9.37h2.96v9.53ZM6.45 8.07a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.47 10.83h-2.96v-4.64c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.72H9.66V9.37h2.84v1.3h.04c.4-.75 1.36-1.55 2.8-1.55 3 0 3.58 1.98 3.58 4.56v5.22Z"/></svg>
+            </a>
+        </div>
+        <p class="copyright">&copy; <span id="currentyear"></span> Dehnizen007 <span class="footer-divider">|</span> Location not set</p>
+        <p class="modified">Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
 </html>
