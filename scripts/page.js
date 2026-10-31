@@ -19,7 +19,8 @@ function renderCourses(filter = "ALL") {
 
     visibleCourses.forEach((course) => {
         const card = document.createElement("article");
-        card.className = `course-card${course.completed ? " is-completed" : ""}`;
+        const statusClass = course.inProgress ? "is-progress" : course.completed ? "is-completed" : "";
+        card.className = `course-card${statusClass ? ` ${statusClass}` : ""}`;
 
         const heading = document.createElement("h3");
         heading.textContent = `${course.subject} ${course.number}: ${course.title}`;
@@ -29,7 +30,7 @@ function renderCourses(filter = "ALL") {
 
         const status = document.createElement("p");
         status.className = "course-status";
-        status.textContent = course.completed ? "Completed" : "Not completed";
+        status.textContent = course.inProgress ? "In progress" : course.completed ? "Completed" : "Not completed";
 
         card.append(heading, details, status);
         courseList.append(card);

@@ -1,15 +1,15 @@
 :root {
     color-scheme: light;
-    --ink: #172b3a;
-    --muted: #536575;
-    --navy: #102a43;
-    --navy-light: #183e5a;
-    --teal: #137c78;
-    --mint: #d7f0e9;
-    --paper: #f4f7f8;
+    --ink: #202020;
+    --muted: #4a4a4a;
+    --navy: #202020;
+    --navy-light: #292929;
+    --teal: #555555;
+    --mint: #e5e5e5;
+    --paper: #ffffff;
     --white: #ffffff;
-    --line: #d6e0e5;
-    --gold: #f1c66d;
+    --line: #bdbdbd;
+    --gold: #bdbdbd;
     font-family: "DM Sans", sans-serif;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -185,11 +185,12 @@ h2 {
     border: 1px solid var(--line);
     border-radius: 0.75rem;
     background: var(--white);
-    box-shadow: 0 5px 16px rgb(16 42 67 / 6%);
+    box-shadow: 0 5px 16px rgb(0 0 0 / 6%);
 }
 
 .panel-content {
     padding: 0.65rem 1.15rem 1rem;
+    background: #d7d7d7;
 }
 
 .panel-content p {
@@ -208,7 +209,7 @@ h2 {
     gap: 0.55rem;
     margin: 0;
     padding: 1rem;
-    background: #eaf2f3;
+    background: #d7d7d7;
 }
 
 .portrait img {
@@ -286,9 +287,15 @@ h2 {
 }
 
 .course-card.is-completed {
-    border-color: #9acfc0;
+    border-color: #bdbdbd;
     border-left-color: var(--teal);
-    background: #eff9f5;
+    background: #eeeeee;
+}
+
+.course-card.is-progress {
+    border-color: #bdbdbd;
+    border-left-color: var(--gold);
+    background: #e5e5e5;
 }
 
 .course-card h3 {
@@ -325,8 +332,8 @@ h2 {
     justify-items: center;
     gap: 0.45rem;
     padding: 1.5rem 1rem;
-    color: var(--white);
-    background: var(--navy);
+    color: var(--ink);
+    background: #d7d7d7;
     text-align: center;
 }
 
@@ -342,15 +349,15 @@ h2 {
     width: 42px;
     height: 42px;
     place-items: center;
-    border: 1px solid rgb(255 255 255 / 38%);
+    border: 1px solid rgb(0 0 0 / 30%);
     border-radius: 50%;
-    color: var(--white);
+    color: var(--ink);
     transition: color 160ms ease, background-color 160ms ease;
 }
 
 .social-links a:hover {
-    color: var(--navy);
-    background: var(--mint);
+    color: var(--white);
+    background: var(--navy);
 }
 
 .social-links svg {
@@ -364,13 +371,13 @@ h2 {
 }
 
 .modified {
-    color: #c8d7e2;
+    color: var(--muted);
     font-size: 0.85rem;
 }
 
 .footer-divider {
     padding: 0 0.25rem;
-    color: var(--gold);
+    color: var(--muted);
 }
 
 @media (prefers-reduced-motion: reduce) {
