@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore businesses and organizations serving Benin City through the Benin City Chamber of Commerce directory.">
+    <meta name="author" content="Dennison Ehidiamhen Iyere">
+    <meta name="theme-color" content="#202020">
+    <meta property="og:title" content="Member Directory | Benin City Chamber of Commerce">
+    <meta property="og:description" content="Meet the businesses and organizations building a stronger Benin City.">
+    <meta property="og:image" content="https://dehnizen007.github.io/wdd231/chamber/images/social-card.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://dehnizen007.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <title>Member Directory | Benin City Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Benin City Chamber of Commerce home">
+            <img src="images/chamber-logo.svg" alt="" width="56" height="56">
+            <span class="brand-name">Benin City <span>Chamber of Commerce</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content" id="main-content">
+        <section class="page-intro" aria-labelledby="page-title">
+            <p class="eyebrow">Together, we grow</p>
+            <h1 id="page-title">Business Directory</h1>
+            <p>Connect with the local businesses and organizations making Benin City a vibrant place to live, work, and visit.</p>
+        </section>
+
+        <section class="directory" aria-labelledby="directory-heading">
+            <h2 class="visually-hidden" id="directory-heading">Chamber of Commerce members</h2>
+            <div class="view-controls" role="group" aria-label="Choose member display">
+                    <button class="view-button is-active" id="grid-view" type="button" aria-label="Grid view" aria-pressed="true">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="12" y="2" width="6" height="6" rx="1"/><rect x="2" y="12" width="6" height="6" rx="1"/><rect x="12" y="12" width="6" height="6" rx="1"/></svg>
+                        <span class="visually-hidden">Grid</span>
+                    </button>
+                    <button class="view-button" id="list-view" type="button" aria-label="List view" aria-pressed="false">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4h11M7 10h11M7 16h11"/><circle cx="3" cy="4" r="1"/><circle cx="3" cy="10" r="1"/><circle cx="3" cy="16" r="1"/></svg>
+                        <span class="visually-hidden">List</span>
+                    </button>
+            </div>
+            <p class="directory-count" id="directory-count" aria-live="polite">Loading members…</p>
+            <div class="member-grid" id="member-directory" aria-live="polite" aria-busy="true"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-contact">
+            <a class="footer-brand" href="index.html">Benin City Chamber of Commerce</a>
+            <address>
+                12 Airport Road, Oka, Benin City, Edo State, Nigeria<br>
+                <a href="mailto:info@benincitychamber.example">info@benincitychamber.example</a><br>
+                <a href="tel:+2348021234567">+234 802 123 4567</a>
+            </address>
+        </div>
+        <div class="footer-development">
+            <p>© <span id="current-year"></span> Benin City Chamber of Commerce</p>
+            <p>Dennison Ehidiamhen Iyere <span aria-hidden="true">|</span> WDD 231</p>
+            <p>Last modified: <time id="last-modified"></time></p>
+        </div>
+    </footer>
+</body>
+</html>

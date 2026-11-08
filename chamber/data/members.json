@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Edo Heritage Centre",
+        "address": "4 Oba Market Road, Benin City, Edo State",
+        "phone": "+234 802 555 0101",
+        "website": "https://example.com/edo-heritage",
+        "image": "edo-heritage.svg",
+        "membershipLevel": 3,
+        "description": "A cultural centre sharing the history, art, and traditions of the Benin Kingdom."
+    },
+    {
+        "name": "Uyi Agro Cooperative",
+        "address": "18 Sapele Road, Benin City, Edo State",
+        "phone": "+234 802 555 0102",
+        "website": "https://example.com/uyi-agro",
+        "image": "uyi-agro.svg",
+        "membershipLevel": 2,
+        "description": "Supporting local growers with fresh produce, farm supplies, and cooperative services."
+    },
+    {
+        "name": "Royal Oak Hospitality",
+        "address": "22 Airport Road, Benin City, Edo State",
+        "phone": "+234 802 555 0103",
+        "website": "https://example.com/royal-oak",
+        "image": "royal-oak.svg",
+        "membershipLevel": 3,
+        "description": "A welcoming hotel and event venue for business travellers and special occasions."
+    },
+    {
+        "name": "Oredo Digital Works",
+        "address": "7 Dawson Road, Benin City, Edo State",
+        "phone": "+234 802 555 0104",
+        "website": "https://example.com/oredo-digital",
+        "image": "oredo-digital.svg",
+        "membershipLevel": 2,
+        "description": "Helping local organizations grow through web design, IT support, and digital training."
+    },
+    {
+        "name": "Igbinedion Health Pharmacy",
+        "address": "31 Sakponba Road, Benin City, Edo State",
+        "phone": "+234 802 555 0105",
+        "website": "https://example.com/igbinedion-health",
+        "image": "health-pharmacy.svg",
+        "membershipLevel": 1,
+        "description": "A community pharmacy focused on accessible medicines and everyday wellness."
+    },
+    {
+        "name": "Osas Legal Partners",
+        "address": "5 Akpakpava Road, Benin City, Edo State",
+        "phone": "+234 802 555 0106",
+        "website": "https://example.com/osas-legal",
+        "image": "osas-legal.svg",
+        "membershipLevel": 1,
+        "description": "Providing practical legal and business advisory services to local enterprises."
+    },
+    {
+        "name": "Edo Creative Print House",
+        "address": "14 Upper Mission Road, Benin City, Edo State",
+        "phone": "+234 802 555 0107",
+        "website": "https://example.com/edo-print",
+        "image": "edo-print.svg",
+        "membershipLevel": 2,
+        "description": "A locally owned print studio for signage, packaging, and business communications."
+    }
+]
