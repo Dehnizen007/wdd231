@@ -39,6 +39,36 @@
         padding-top: 3rem;
     }
 
+    .home-page {
+        gap: 2.5rem;
+    }
+
+    .home-hero {
+        min-height: 440px;
+    }
+
+    .hero-message {
+        right: auto;
+        bottom: 2rem;
+        left: 2rem;
+        padding: 1.5rem;
+    }
+
+    .home-highlights {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .home-panel {
+        padding: 1.5rem;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
     .page-intro {
         margin-bottom: 2.5rem;
     }
@@ -97,6 +127,14 @@
 
 @media (min-width: 1050px) {
     .member-grid:not(.is-list) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .home-hero {
+        min-height: 480px;
+    }
+
+    .spotlight-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }

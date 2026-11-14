@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover local events, business resources, and member businesses with the Benin City Chamber of Commerce.">
+    <meta name="author" content="Dennison Ehidiamhen Iyere">
+    <meta name="theme-color" content="#202020">
+    <meta property="og:title" content="Benin City Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses and creating opportunity in Benin City.">
+    <meta property="og:image" content="https://dehnizen007.github.io/wdd231/chamber/images/social-card.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://dehnizen007.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+    <title>Home | Benin City Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Benin City Chamber of Commerce home">
+            <img src="images/chamber-logo.svg" alt="" width="56" height="56">
+            <span class="brand-name">Benin City <span>Chamber of Commerce</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content home-page" id="main-content">
+        <section class="home-hero" aria-labelledby="hero-title">
+            <img src="images/benin-city-hero.svg" alt="Illustration of Benin City with a welcoming streetscape and local businesses" width="1200" height="540">
+            <div class="hero-message">
+                <p class="eyebrow">Stronger together</p>
+                <h1 id="hero-title">A brighter future for Benin City</h1>
+                <p>Building connections, championing local businesses, and creating opportunity across our community.</p>
+                <a class="button-link" href="join.html">Become a member</a>
+            </div>
+        </section>
+
+        <div class="home-highlights">
+            <section class="home-panel events-panel" aria-labelledby="events-title">
+                <p class="eyebrow">Connect and grow</p>
+                <h2 id="events-title">Upcoming events</h2>
+                <article class="event-item">
+                    <time datetime="2026-11-27"><span>27</span> Nov 2026</time>
+                    <div>
+                        <h3>Benin Business Exchange</h3>
+                        <p>Meet local entrepreneurs and build valuable connections over breakfast.</p>
+                    </div>
+                </article>
+                <article class="event-item">
+                    <time datetime="2026-12-08"><span>08</span> Dec 2026</time>
+                    <div>
+                        <h3>Digital Skills for Small Business</h3>
+                        <p>A practical workshop on helping your business reach more customers online.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="home-panel weather-panel" aria-labelledby="weather-title">
+                <p class="eyebrow">Benin City, Edo State</p>
+                <h2 id="weather-title">Local weather</h2>
+                <div class="current-weather" id="current-weather" aria-live="polite" aria-busy="true">
+                    <p class="weather-status">Loading current conditions…</p>
+                </div>
+                <h3 class="forecast-heading">3-day forecast</h3>
+                <div class="forecast-list" id="forecast-list" aria-live="polite"></div>
+            </section>
+        </div>
+
+        <section class="spotlights-section" aria-labelledby="spotlights-title">
+            <div class="section-heading">
+                <p class="eyebrow">Meet our members</p>
+                <h2 id="spotlights-title">Business spotlights</h2>
+                <p>Discover the people and businesses helping Benin City thrive.</p>
+            </div>
+            <div class="spotlight-grid" id="spotlight-grid" aria-live="polite" aria-busy="true">
+                <p class="spotlight-message">Loading member spotlights…</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-contact">
+            <a class="footer-brand" href="index.html">Benin City Chamber of Commerce</a>
+            <address>
+                12 Airport Road, Oka, Benin City, Edo State, Nigeria<br>
+                <a href="mailto:info@benincitychamber.example">info@benincitychamber.example</a><br>
+                <a href="tel:+2348021234567">+234 802 123 4567</a>
+            </address>
+        </div>
+        <div class="footer-development">
+            <p>© <span id="current-year"></span> Benin City Chamber of Commerce</p>
+            <p>Dennison Ehidiamhen Iyere <span aria-hidden="true">|</span> WDD 231</p>
+            <p>Last modified: <time id="last-modified"></time></p>
+        </div>
+    </footer>
+</body>
+</html>
